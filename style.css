@@ -1,0 +1,91 @@
+.navbar {
+  padding: 0;
+  background-color: bisque !important;
+}
+
+.card-img,
+.card-img-top {
+  object-fit: cover;
+}
+
+#favorite-albums .card img {
+  height: 180px;
+}
+
+.jumbotron {
+  background-image: url("./assets/jumbo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+.jumbotron {
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div.card {
+  position: relative;
+}
+
+#favorite-albums div.card div.label {
+  /* background-color: red; */
+  height: 40px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#favorite-albums div.card div.label img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -7px;
+  left: -0.5px;
+}
+
+#favorite-albums div.card div.label div {
+  font-size: 15px;
+  /* color: red; */
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+
+.table {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#add-track {
+  width: 100px !important;
+  margin-inline: auto !important;
+}
+
+#add-track:hover {
+  box-shadow: 0px 5px 8px rgb(137, 136, 136);
+}
+
+#add-track-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-body ul {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */ ;

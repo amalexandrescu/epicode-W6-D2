@@ -11,89 +11,130 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
   </head>
+
   <body>
-    <nav
-      class="navbar navbar-expand navbar-expand-sm navbar-expand-lg navbar-light sticky-top row"
-      style="background-color: #e3f2fd"
-    >
-      <div class="dropdown">
-        <a
-          class="btn dropdown-toggle"
-          href="#"
-          role="button"
-          data-toggle="dropdown"
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarScroll"
+          aria-controls="navbarScroll"
           aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Favorite albums
-        </a>
-
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#favorite-albums">Romance</a>
-          <a class="dropdown-item" href="#favorite-albums">Camila</a>
-          <a class="dropdown-item" href="#favorite-albums">Familia</a>
-          <a class="dropdown-item" href="#favorite-albums">The Diva Serie</a>
-        </div>
-      </div>
-
-      <div>
-        <a class="btn" href="#album-review" role="button" aria-expanded="false">
-          Album review
-        </a>
-      </div>
-
-      <div class="dropdown">
-        <a
-          class="btn dropdown-toggle"
-          href="#"
-          role="button"
-          data-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Worst albums
-        </a>
-
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#worst-album">18</a>
-          <a class="dropdown-item" href="#worst-album"
-            >Twelve Carat Toothache</a
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="max-height: 100px"
           >
-          <a class="dropdown-item" href="#worst-album">What's It Gonna Take?</a>
-          <a class="dropdown-item" href="#worst-album">The Last Slimeto</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Favorite albums
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#week-deal">Romance</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal">Camila</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal">Familia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal">The diva serie</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hello-summer">Album reviews</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Worst albums
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#week-deal">18</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal"
+                    >Twelve Carat Toothache</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal"
+                    >What’s it gonna take</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#week-deal"
+                    >The last slimeto</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#last-minute">More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Tapestry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact us</a>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <div>
-        <a class="btn" href="#more" role="button" aria-expanded="false">
-          More
-        </a>
-      </div>
-
-      <div>
-        <a class="btn" href="#tapestry" role="button" aria-expanded="false">
-          Tapestry
-        </a>
-      </div>
-
-      <div>
-        <a class="btn" href="#footer" role="button" aria-expanded="false">
-          Contact
-        </a>
       </div>
     </nav>
 
-    <div id="favorite-albums" class="container bg-light">
+    <div class="jumbotron jumbotron-fluid text-white">
       <div class="container">
-        <h2>Favorite albums</h2>
+        <h1 class="display-4">Camila Cabello</h1>
+        <p class="lead">something</p>
+      </div>
+    </div>
 
+    <div id="favorite-albums" class="bg-light">
+      <div class="container bg-primary">
+        <h2>Favorite albums</h2>
         <div class="row text-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/Romance_(Official_Album_Cover)_by_Camila_Cabello.png"
                 class="card-img-top img-fluid"
                 alt="Camila Cabello Romance album picture"
               />
+              <div class="label">
+                <img src="./assets/label.png" alt="label image with music genre" />
+                <div>POP</div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Romance</h5>
                 <ul class="list-group list-group-flush">
@@ -105,12 +146,16 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/camila-album.png"
                 class="card-img-top img-fluid"
                 alt="Camila Cabello Romance album picture"
               />
+              <div class="label">
+                <img src="./assets/label.png" alt="label image with music genre" />
+                <div>POP</div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Camila</h5>
                 <ul class="list-group list-group-flush">
@@ -122,12 +167,16 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/familia.png"
                 class="card-img-top img-fluid"
                 alt="Camila Cabello Romance album picture"
               />
+              <div class="label">
+                <img src="./assets/label.png" alt="label image with music genre" />
+                <div>LATIN POP</div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Familia</h5>
                 <ul class="list-group list-group-flush">
@@ -138,13 +187,19 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3 mx-md-auto mx-xl-0"
+          >
+            <div class="card">
               <img
                 src="./assets/diva-series.webp"
                 class="card-img-top img-fluid"
                 alt="Camila Cabello Romance album picture"
               />
+              <div class="label">
+                <img src="./assets/label.png" alt="label image with music genre" />
+                <div>POP</div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">The Diva Serie</h5>
                 <ul class="list-group list-group-flush">
@@ -157,11 +212,12 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="album-review" class="container mb-3">
+      <div id="album-review" class="container mb-3 ">
         <h2>Album reviews</h2>
         <div class="row">
-          <div class="col-xl-6">
+          <div class=" col-lg-6 col-xl-6 mb-3">
             <div class="card bg-dark text-white">
               <img
                 src="./assets/romance-alb.jpg"
@@ -176,69 +232,91 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
-            <div class="table-responsive">
-              <table class="table">
+          <div class=" col-lg-6 col-xl-6">
+            <!-- <div class="table-responsive"> -->
+              <table class="table table-striped table-bordered text-center">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Song</th>
+                    <th scope="col">Artist</th>
                     <th scope="col">Duration</th>
+                    <th scope="col">Remove</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Shameless</td>
-                    <td>3:40</td>
+                    <th class="align-middle" scope="row">1</th>
+                    <td class="align-middle">Shameless</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:40</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Senorita</td>
-                    <td>3:11</td>
+                    <th class="align-middle" scope="row">2</th>
+                    <td class="align-middle">Senorita</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:11</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
-                    <td>Easy</td>
-                    <td>3:15</td>
+                    <th class="align-middle" scope="row">3</th>
+                    <td class="align-middle">Easy</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:15</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">4</th>
-                    <td>Living Proof</td>
-                    <td>3:14</td>
+                    <th class="align-middle" scope="row">4</th>
+                    <td class="align-middle">Living Proof</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:14</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">5</th>
-                    <td>Liar</td>
-                    <td>3:28</td>
+                    <th class="align-middle" scope="row">5</th>
+                    <td class="align-middle">Liar</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:28</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">6</th>
-                    <td>Feel it Twice</td>
-                    <td>3:08</td>
+                    <th class="align-middle" scope="row">6</th>
+                    <td class="align-middle">Feel it Twice</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:08</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">7</th>
-                    <td>Bad Kind of Butterflies</td>
-                    <td>2:49</td>
+                    <th class="align-middle" scope="row">7</th>
+                    <td class="align-middle">Bad Kind of Butterflies</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">2:49</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">8</th>
-                    <td>Dream of You</td>
-                    <td>3:43</td>
+                    <th class="align-middle" scope="row">8</th>
+                    <td class="align-middle">Dream of You</td>
+                    <td class="align-middle">Camila Cabello</td>
+                    <td class="align-middle">3:43</td>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
                   </tr>
+                  
                 </tbody>
               </table>
-            </div>
+            <!-- </div> -->
+            <div id="add-track-container" class="w-100">
+            <button id="add-track" type="button" class="btn btn-success my-3">Add track</button>
+          </div>
           </div>
         </div>
       </div>
 
-      <div id="worst-album" class="container mb-3">
+      <div id="worst-album" class="container mb-3 ">
         <h2>Worst albums list</h2>
-        <div class="row">
+        <div class="row text-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/jeff-beck.jpeg"
                 class="card-img-top img-fluid"
@@ -256,7 +334,7 @@
           </div>
 
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/post-malone.webp"
                 class="card-img-top img-fluid"
@@ -274,7 +352,7 @@
           </div>
 
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+            <div class="card">
               <img
                 src="./assets/van-morrison.jpeg"
                 class="card-img-top img-fluid"
@@ -291,8 +369,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
-            <div class="card" style="max-width: 13rem">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3 mx-md-auto mx-xl-0">
+            <div class="card">
               <img
                 src="./assets/young-boy.jpeg"
                 class="card-img-top img-fluid"
