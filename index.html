@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -116,12 +116,11 @@
     <div class="jumbotron jumbotron-fluid text-white">
       <div class="container">
         <h1 class="display-4">Camila Cabello</h1>
-        <p class="lead">something</p>
       </div>
     </div>
 
-    <div id="favorite-albums" class="bg-light">
-      <div class="container bg-primary">
+    <div id="favorite-albums">
+      <div class="container">
         <h2>Favorite albums</h2>
         <div class="row text-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
@@ -132,8 +131,7 @@
                 alt="Camila Cabello Romance album picture"
               />
               <div class="label">
-                <img src="./assets/label.png" alt="label image with music genre" />
-                <div>POP</div>
+                POP
               </div>
               <div class="card-body">
                 <h5 class="card-title">Romance</h5>
@@ -153,8 +151,7 @@
                 alt="Camila Cabello Romance album picture"
               />
               <div class="label">
-                <img src="./assets/label.png" alt="label image with music genre" />
-                <div>POP</div>
+                POP
               </div>
               <div class="card-body">
                 <h5 class="card-title">Camila</h5>
@@ -174,8 +171,7 @@
                 alt="Camila Cabello Romance album picture"
               />
               <div class="label">
-                <img src="./assets/label.png" alt="label image with music genre" />
-                <div>LATIN POP</div>
+                LATIN POP
               </div>
               <div class="card-body">
                 <h5 class="card-title">Familia</h5>
@@ -197,8 +193,7 @@
                 alt="Camila Cabello Romance album picture"
               />
               <div class="label">
-                <img src="./assets/label.png" alt="label image with music genre" />
-                <div>POP</div>
+                POP
               </div>
               <div class="card-body">
                 <h5 class="card-title">The Diva Serie</h5>
@@ -217,7 +212,7 @@
       <div id="album-review" class="container mb-3 ">
         <h2>Album reviews</h2>
         <div class="row">
-          <div class=" col-lg-6 col-xl-6 mb-3">
+          <div class=" col-lg-5 col-xl-6 mb-3">
             <div class="card bg-dark text-white">
               <img
                 src="./assets/romance-alb.jpg"
@@ -232,9 +227,9 @@
               </div>
             </div>
           </div>
-          <div class=" col-lg-6 col-xl-6">
+          <div class=" col-lg-7 col-xl-6">
             <!-- <div class="table-responsive"> -->
-              <table class="table table-striped table-bordered text-center">
+              <table class="table table-striped text-center">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -250,69 +245,122 @@
                     <td class="align-middle">Shameless</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:40</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">2</th>
                     <td class="align-middle">Senorita</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:11</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">3</th>
                     <td class="align-middle">Easy</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:15</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">4</th>
                     <td class="align-middle">Living Proof</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:14</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">5</th>
                     <td class="align-middle">Liar</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:28</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">6</th>
                     <td class="align-middle">Feel it Twice</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:08</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">7</th>
                     <td class="align-middle">Bad Kind of Butterflies</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">2:49</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   <tr>
                     <th class="align-middle" scope="row">8</th>
                     <td class="align-middle">Dream of You</td>
                     <td class="align-middle">Camila Cabello</td>
                     <td class="align-middle">3:43</td>
-                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td><button type="button" class="btn btn-outline-danger">Remove</button></td>
                   </tr>
                   
                 </tbody>
               </table>
-            <!-- </div> -->
-            <div id="add-track-container" class="w-100">
-            <button id="add-track" type="button" class="btn btn-success my-3">Add track</button>
-          </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="worst-album" class="container mb-3 ">
+              <!-- Button trigger modal -->
+              <div id="add-track-container" class="w-100">
+                <button id="add-track" type="button" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#exampleModal">
+                  Add track
+                </button>
+              </div>
+            </div>  
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add a track</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6  mb-3">
+
+            <label for="track-number" class="col-form-label">Track number:</label>
+            <input id="track-number" type="text" class="form-control" >
+          </div>
+          <div class="col-6  mb-3">
+            <label for="track-title" class="col-form-label">Track title:</label>
+            <input id="track-title" type="text" class="form-control" >
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-6  mb-3">
+            <label for="artist-name" class="col-form-label"">Artist name:</label>
+            <input id="artist-name" type="text" class="form-control" >
+          </div>
+          <div class="col-6  mb-3">
+            <label for="track-duration" class="col-form-label">Track duration:</label>
+            <input id="track-duration" type="text" class="form-control" >
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="add-button" type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="alert alert-success alert-dismissible fade in" role="alert">
+  You have successfully added <strong class="alert-link"></strong> to your tracklist!
+  <button type="button" class="close" data-dismiss="alert" aria-label="close"> 
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</div>
+</div>
+            
+
+      <div id="worst-album" class="container mb-3">
         <h2>Worst albums list</h2>
         <div class="row text-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
@@ -399,9 +447,9 @@
               </li>
               <li class="list-group-item">GRAMMYS 2020 performance</li>
               <li class="list-group-item">GRAMMYS 2019 - 2 nominations</li>
-              <li class="list-group-item">Camila hits #1 on BILLBOARD</li>
-              <li class="list-group-item">"Havana" reaches #1 at POP Radio</li>
-              <li class="list-group-item">
+              <li class="list-group-item d-none d-sm-none d-md-block">Camila hits #1 on BILLBOARD</li>
+              <li class="list-group-item d-none d-sm-none d-md-block">"Havana" reaches #1 at POP Radio</li>
+              <li class="list-group-item d-none d-sm-none d-md-block">
                 "Havana" reaches #2 on BILLBOARD's Hot 100
               </li>
             </ul>
@@ -420,115 +468,120 @@
 
       <div id="tapestry" class="container mb-3">
         <h2>Tapestry</h2>
-        <div class="row col-12">
+        <div class="row no-gutters">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/easy-album.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
+            
           />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/camila album.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
-          <img
-            src="./assets/camila-cabello.jpeg"
-            alt="Album picture"
-            style="width: 150px; height: 150px"
-          />
+        </div>
+         
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/don't-go-yet.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/havana-song.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/liar-song.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/romance-alb.jpg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/romance-album.jpg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/Romance_(Official_Album_Cover)_by_Camila_Cabello.png"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/shameless-album.jpg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/shameless.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/camila album.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/camila-2.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/camila-3.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
-          <img
-            src="./assets/romance-album.jpg"
-            alt="Album picture"
-            style="width: 150px; height: 150px"
-          />
+        </div>
+          
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/romance-alb.jpg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
-          <img
-            src="./assets/camila-cabello.jpeg"
-            alt="Album picture"
-            style="width: 150px; height: 150px"
-          />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/havana-song.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <img
             src="./assets/liar-song.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 ml-lg-auto">
           <img
             src="./assets/don't-go-yet.jpeg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
+        </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mr-lg-auto">
           <img
             src="./assets/shameless-album.jpg"
             alt="Album picture"
-            style="width: 150px; height: 150px"
           />
         </div>
-      </div>
-      <div id="footer" class="container">
+        </div>
+        </div>
         <footer class="container mb-3">
           <div class="row">
             <a href="#">
@@ -582,29 +635,8 @@
           </div>
         </footer>
       </div>
-      <!-- 
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <div class="card" style="max-width: 13rem">
-            <img
-              src="./assets/Romance_(Official_Album_Cover)_by_Camila_Cabello.png"
-              class="card-img-top"
-              alt="Camila Cabello Romance album picture"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Artist name</li>
-                <li class="list-group-item">Album genre</li>
-                <li class="list-group-item">Album duration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    </div>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
